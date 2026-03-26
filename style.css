@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+nav h2 {
+    font-weight: 500;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00f7ff;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.hero p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00f7ff, #0066ff);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0,247,255,0.5);
+}
+
+/* IMAGE */
+.hero-img img {
+    width: 420px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
+/* PAGE */
+.page {
+    padding: 80px 60px;
+    max-width: 900px;
+    animation: fadeIn 1s ease;
+}
+
+/* SKILLS */
+.skills li {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+/* LINKS */
+.links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: #00f7ff;
+    padding-left: 6px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    padding: 40px 60px;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left p {
+    margin: 5px 0;
+    color: #aaa;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* ICON BUTTONS */
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: #00f7ff;
+    transform: translateY(-2px);
+}
+
+/* SOCIAL ICONS */
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #00f7ff;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
