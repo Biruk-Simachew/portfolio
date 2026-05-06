@@ -21,6 +21,8 @@ nav {
     justify-content: space-between;
     padding: 20px 60px;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav h2 {
@@ -33,6 +35,13 @@ nav a {
     margin-left: 20px;
     position: relative;
     transition: 0.3s;
+}
+
+nav div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 14px 0;
 }
 
 nav a::after {
@@ -254,6 +263,10 @@ footer {
     nav {
         flex-direction: column;
         gap: 10px;
+    }
+
+    nav div {
+        justify-content: center;
     }
 
     .photos {
